@@ -116,6 +116,14 @@ section {
   margin-left: 20px;
 }
 
+.btn-form-submit:hover {
+  background: #F2DA56;
+}
+
+.btn-form-submit:active {
+  background: #F6BC25;
+}
+
 .input-group > .form-control {
   height: 70px;
   background: #FFF;
@@ -170,6 +178,10 @@ section {
   }
   .input-group > .form-control {
     height: 50px;
+  }
+  .input-group.error .error-msg {
+	position: relative;
+    bottom: auto;
   }
   .btn-form-submit {
     margin: 12px 0 0 0;
@@ -270,6 +282,19 @@ section {
     font-size: 26.88px;
     margin-right: 10.6px;
   }
+}
+
+
+/* ************************************************************
+***************************************************************
+--- [SECTION] Spinner ---
+***************************************************************
+************************************************************ */
+
+@media (min-width: 991px) {
+	.spinner-height {
+		height: 460px;
+	}
 }
 
 /* ************************************************************
