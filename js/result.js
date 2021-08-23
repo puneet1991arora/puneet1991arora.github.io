@@ -4,8 +4,8 @@ $(document).ready(function () {
    * If there's no content in the JSON object, makes sure to tell the user
    */
   if (window.localStorage) {
-    if (localStorage.emailSearchResult) {
-      var emailResult = JSON.parse(localStorage.getItem('emailSearchResult')); //get the object & parses the object into an JSON object
+    if (localStorage.searchResult) {
+      var emailResult = JSON.parse(localStorage.getItem('searchResult')); //get the object & parses the object into an JSON object
       if (JSON.stringify(emailResult) == "[]") {
         $('#result-count').text("0 Results");
         $(".result-desc").text("Try starting a new search below");

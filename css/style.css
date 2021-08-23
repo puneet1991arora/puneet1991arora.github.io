@@ -204,6 +204,60 @@ section {
   margin: 0 auto;
 }
 
+.search-type {
+	margin-bottom: 20px;
+}
+
+.search-type-title {
+  color: #ffffff;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.search-type-tabs {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+}
+
+.search-type-tabs li {
+  font-size: 16px;
+  font-weight: 700;
+  color: #F6BC25;  
+  text-transform: uppercase;
+  border: 3px solid #F6BC25;
+  border-radius: 6px;
+  padding: 5px 10px;
+  margin-left: 15px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.search-type-tabs li.active {
+  color: #004A80;
+  background: #F6BC25;
+}
+
+.search-type-tabs li.active:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -15px;
+  transform: translateX(-50%);
+  text-align: center;
+  border-width: 6px 6px 6px 6px;
+  border-style: solid;
+  border-color: #f6bc25 transparent transparent transparent;
+}
+
+@media(max-width: 767px) {
+	.search-type-title {
+		display: none;
+	}
+}
+
 /* ************************************************************
 ***************************************************************
 --- [SECTION] Features ---
